@@ -1,0 +1,115 @@
+/* ======= Maxímus Burger — Responsividade ======= */
+
+/* Smartphones (até 480px) */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container-buttons {
+        flex-direction: column;
+        gap: 10px;
+        top: 10px;
+        position: relative;
+    }
+
+    button {
+        width: 80%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    ul {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    li {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .item-price {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container-buttons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    button {
+        width: 45%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    li {
+        width: 90%;
+        margin: auto;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .item-price {
+        font-size: 17px;
+    }
+}
+
+/* Laptops e telas médias (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-buttons {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    button {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    li {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Monitores grandes (acima de 1025px) */
+@media (min-width: 1025px) {
+    ul {
+        grid-template-columns: repeat(3, 200px);
+        gap: 25px;
+    }
+
+    button {
+        font-size: 20px;
+        width: 160px;
+    }
+}
