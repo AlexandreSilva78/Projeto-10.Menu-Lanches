@@ -73,6 +73,8 @@ li {
     padding: 1px;
     cursor: pointer;
     border-radius: 15px;
+    background-color: #87cf15;
+    border-radius: 10px;
 }
 
 img {
